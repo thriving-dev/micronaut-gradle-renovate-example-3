@@ -12,5 +12,17 @@
       "matchCurrentVersion": "!/^0/",
       "automerge": true
     }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "maven",
+      "depNameTemplate": "micronaut",
+      "packageNameTemplate": "io.micronaut.platform:micronaut-platform",
+      "fileMatch": ["(^|/)gradle\\.properties"],
+      "matchStrings": [
+        "micronautVersion=(?<currentValue>[\\w+\\.\\-]*)"
+      ]
+    }
   ]
 }
