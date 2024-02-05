@@ -40,7 +40,6 @@ dependencies {
     intTestImplementation(libs.assertj)
 }
 
-
 application {
     mainClass.set("dev.thriving.example.app.Application")
 }
