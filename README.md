@@ -4,14 +4,19 @@
 [![Java CI](https://github.com/thriving-dev/micronaut-gradle-renovate-example-3/actions/workflows/1.pipeline.yml/badge.svg)](https://github.com/thriving-dev/micronaut-gradle-renovate-example-3/actions/workflows/1.pipeline.yml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-Micronaut gradle project with automated dependency updates by renovate that _actually_ updates the micronaut runtime used.
+Renovate hit a snag with Micronaut updates?
 
-TLDR: Projects created via [Micronaut Launch](https://micronaut.io/launch) define the micronaut version to be used in the `gradle.properties` file which is not discoverable by renovate.
-Further, switching from the properties file to [version catalog](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) the version also is not discoverable/resolvable by renovate.
+**TLDR:** Renovate cannot automatically update Micronaut dependencies for gradle projects created via 'Launch' or CLI. The explanation to the version not tracked is relatively simple ...Renovate cannot resolve the packageName and datasource.
+
+Don't worry! This 4-part guide reveals the issue & offers three solutions (parts 2-4).   
+=> https://thriving.dev/blog/streamline-micronaut-gradle-updates-with-renovate-1
 
 
-## References
-- [Micronaut Gradle Plugin](https://micronaut-projects.github.io/micronaut-gradle-plugin/latest/index.html)
+### All Repositories of This Blog Post Series
+- [thriving-dev/micronaut-gradle-renovate-example-0](https://github.com/thriving-dev/micronaut-gradle-renovate-example-0) (default, not updatable by Renovate)
+- [thriving-dev/micronaut-gradle-renovate-example-1](https://github.com/thriving-dev/micronaut-gradle-renovate-example-1) (solution 1)
+- [thriving-dev/micronaut-gradle-renovate-example-2](https://github.com/thriving-dev/micronaut-gradle-renovate-example-2) (solution 2)
+- [thriving-dev/micronaut-gradle-renovate-example-3](https://github.com/thriving-dev/micronaut-gradle-renovate-example-3) (solution 3) 👑
 
-## Credits
+### Credits
 - Created by https://github.com/thriving-dev/java-library-template
