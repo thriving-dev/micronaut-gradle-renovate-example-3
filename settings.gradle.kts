@@ -9,8 +9,8 @@ dependencyResolutionManagement {
 
             library("junit", "org.junit.jupiter:junit-jupiter:5.10.2")
             library("assertj", "org.assertj:assertj-core:3.25.3")
-            library("testcontainers", "org.testcontainers:testcontainers:1.19.6")
-            library("testcontainers-junit5", "org.testcontainers:junit-jupiter:1.19.6")
+            library("testcontainers", "org.testcontainers:testcontainers:1.19.7")
+            library("testcontainers-junit5", "org.testcontainers:junit-jupiter:1.19.7")
 
             bundle("testcontainers-junit", listOf("testcontainers", "testcontainers-junit5"))
         }
